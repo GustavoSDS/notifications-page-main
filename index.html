@@ -16,41 +16,41 @@
   <main class="page__container">
     <div class="page__card-notification">
       <header class="header">
-        <h1 class="header__notifications">Notifications <span class="header__notifications--quantity">3</span>
+        <h1 class="header__notifications">Notifications <span class="header__notifications--quantity" id="notifications">3</span>
         </h1>
-        <a class="header__button-notification" href="#">Mark all as read</a>
+        <a class="header__button-notification" href="#" id="btnMarkAllRead">Mark all as read</a>
       </header>
       <section class="section-notifications">
-        <div class="card card__size-1 card__activities--active">
+        <div class="card card__size-1 card__activities--active" id="notificationActive">
           <img src="./assets/images/avatar-mark-webber.webp" alt="avatar Mark Webber" class="card__image">
           <div class="card__activities">
             <p>
               <a href="#" class="card__name">Mark Webber</a>
               reacted to your recent post
               <a href="#" class="card__activity-tag">My first tournament today!</a>
-              <span class="card__notification--active"></span>
+              <span class="card__notification--active" id="notificatioDot"></span>
             </p>
             <span class="card__activity-date">1m ago</span>
           </div>
         </div>
-        <div class="card card__size-2 card__activities--active">
+        <div class="card card__size-2 card__activities--active" id="notificationActive">
           <img src="./assets/images/avatar-angela-gray.webp" alt="avatar Angela Gray" class="card__image">
           <div class="card__activities">
             <p>
               <a href="#" class="card__name">Angela Gray</a>
-              followed you <span class="card__notification--active"></span>
+              followed you <span class="card__notification--active" id="notificatioDot"></span>
             </p>
             <span class="card__activity-date">5m ago</span>
           </div>
         </div>
-        <div class="card card__size-3 card__activities--active">
+        <div class="card card__size-3 card__activities--active" id="notificationActive">
           <img src="./assets/images/avatar-jacob-thompson.webp" alt="avatar Jacob Thompson" class="card__image">
           <div class="card__activities">
             <p>
               <a href="#" class="card__name">Jacob Thompson</a>
               has joined your group
               <a href="#" class="card__activity-tag card__activity-tag--active">Chess Club</a>
-              <span class="card__notification--active"></span>
+              <span class="card__notification--active" id="notificatioDot"></span>
             </p>
             <span class="card__activity-date">1 day ago</span>
           </div>
@@ -112,6 +112,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Gustavo S. Dos Santos</a>.
   </footer> -->
+  <script src="js/main.js"></script>
 </body>
 
 </html>
