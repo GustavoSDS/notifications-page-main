@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Notifications page</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="page">
+  <main class="page__container">
+    <div class="page__card-notification">
+      <header class="header">
+        <h1 class="header__notifications">Notifications <span class="header__notifications--quantity">3</span>
+        </h1>
+        <a class="header__button-notification" href="#">Mark all as read</a>
+      </header>
+      <section class="section-notifications">
+        <div class="card card__size-1 card__activities--active">
+          <img src="./assets/images/avatar-mark-webber.webp" alt="avatar Mark Webber" class="card__image">
+          <div class="card__activities">
+            <p>
+              <a href="#" class="card__name">Mark Webber</a>
+              reacted to your recent post
+              <a href="#" class="card__activity-tag">My first tournament today!</a>
+              <span class="card__notification--active"></span>
+            </p>
+            <span class="card__activity-date">1m ago</span>
+          </div>
+        </div>
+        <div class="card card__size-2 card__activities--active">
+          <img src="./assets/images/avatar-angela-gray.webp" alt="avatar Angela Gray" class="card__image">
+          <div class="card__activities">
+            <p>
+              <a href="#" class="card__name">Angela Gray</a>
+              followed you <span class="card__notification--active"></span>
+            </p>
+            <span class="card__activity-date">5m ago</span>
+          </div>
+        </div>
+        <div class="card card__size-3 card__activities--active">
+          <img src="./assets/images/avatar-jacob-thompson.webp" alt="avatar Jacob Thompson" class="card__image">
+          <div class="card__activities">
+            <p>
+              <a href="#" class="card__name">Jacob Thompson</a>
+              has joined your group
+              <a href="#" class="card__activity-tag card__activity-tag--active">Chess Club</a>
+              <span class="card__notification--active"></span>
+            </p>
+            <span class="card__activity-date">1 day ago</span>
+          </div>
+        </div>
+        <div class="card card__size-4">
+          <img src="./assets/images/avatar-rizky-hasanuddin.webp" alt="avatar Rizky Hasanuddin" class="card__image">
+          <div class="card__activities">
+            <p>
+              <a href="#" class="card__name">Rizky Hasanuddin</a>
+              sent you a private message
+            </p>
+            <span class="card__activity-date">5 day ago</span>
+            <a href="#" class="card__activity-message">
+              Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having
+              lots of fun and improving my game.
+            </a>
+          </div>
+        </div>
+        <div class="card card__size-5">
+          <img src="./assets/images/avatar-kimberly-smith.webp" alt="avatar Kimberly Smith" class="card__image">
+          <div class="card__activities">
+            <div class="card__activity-picture--photo">
+              <p>
+                <a href="#" class="card__name">Kimberly Smith</a>
+                commented on your picture
+              </p>
+              <img src="./assets/images/image-chess.webp" alt="image chess" class="card__activity-picture">
+            </div>
+            <span class="card__activity-date card__activity-date--position">1 week ago</span>
+          </div>
+        </div>
+        <div class="card card__size-6">
+          <img src="./assets/images/avatar-nathan-peterson.webp" alt="avatar Nathan Peterson" class="card__image">
+          <div class="card__activities">
+            <p>
+              <a href="#" class="card__name">Nathan Peterson</a>
+              reacted to your recent post
+              <a href="#" class="card__activity-tag">5 end-game strategies to increase your win rate</a>
+            </p>
+            <span class="card__activity-date">2 weeks ago</span>
+          </div>
+        </div>
+        <div class="card card__size-7">
+          <img src="./assets/images/avatar-anna-kim.webp" alt="avatar Anna Kim" class="card__image">
+          <div class="card__activities">
+            <p>
+              <a href="#" class="card__name">Anna Kim</a>
+              left the group
+              <a href="#" class="card__activity-tag card__activity-tag--active">Chess Club</a>
+            </p>
+            <span class="card__activity-date">2 week ago</span>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+<!--   <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Gustavo S. Dos Santos</a>.
+  </footer> -->
+</body>
+
+</html>

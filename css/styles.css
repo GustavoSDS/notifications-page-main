@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page {
+  font: 1rem "Plus Jakarta Sans", sans-serif;
+  background-color: hsl(210deg, 60%, 98%);
+}
+.page__container {
+  width: 375px;
+  margin: auto;
+  padding: 24px 17px 24px 17px;
+  background-color: hsl(0deg, 0%, 100%);
+}
+.page .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.page .header__notifications {
+  width: 170px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 800;
+  font-size: 1.25rem;
+  letter-spacing: 1%;
+  color: hsl(224deg, 21%, 14%);
+}
+.page .header__notifications--quantity {
+  width: 32px;
+  height: 25px;
+  display: grid;
+  text-align: center;
+  padding-top: 1px;
+  background-color: hsl(219deg, 85%, 26%);
+  color: hsl(0deg, 0%, 100%);
+  border-radius: 0.3125rem;
+  font-size: 1.125rem;
+}
+.page .header__button-notification {
+  text-decoration: none;
+  color: hsl(219deg, 12%, 42%);
+  font-size: 0.9rem;
+}
+.page .header__button-notification:hover {
+  color: hsl(219deg, 85%, 26%);
+}
+.page .section-notifications {
+  width: 100%;
+  height: 805px;
+  margin-top: 24px;
+}
+.page .section-notifications .card {
+  position: relative;
+  width: 100%;
+  margin-bottom: 12px;
+  display: flex;
+  padding: 13px;
+  border-radius: 7px;
+}
+.page .section-notifications .card__notification--active::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border: 4px solid hsl(1deg, 90%, 64%);
+  position: absolute;
+  margin: 5px 0 0 6px;
+  border-radius: 100%;
+  background-color: hsl(1deg, 90%, 64%);
+}
+.page .section-notifications .card__size-1, .page .section-notifications .card__size-3 {
+  height: 87px;
+}
+.page .section-notifications .card__size-2 {
+  height: 70px;
+}
+.page .section-notifications .card__size-4 {
+  height: 218px;
+}
+.page .section-notifications .card__size-5 {
+  height: 85px;
+}
+.page .section-notifications .card__size-6 {
+  height: 104px;
+}
+.page .section-notifications .card__size-7 {
+  height: 67px;
+}
+.page .section-notifications .card__image {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+.page .section-notifications .card__activities {
+  width: 100%;
+  font-size: 0.8rem;
+  margin-left: 15px;
+}
+.page .section-notifications .card__activities p {
+  color: hsl(219deg, 12%, 42%);
+}
+.page .section-notifications .card__activities--active {
+  background-color: hsl(210deg, 60%, 98%);
+}
+.page .section-notifications .card__name {
+  display: inline-block;
+  font-size: 0.9375rem;
+  font-weight: 800;
+  text-decoration: none;
+  color: hsl(224deg, 21%, 14%);
+}
+.page .section-notifications .card__name:hover {
+  color: hsl(219deg, 85%, 26%);
+}
+.page .section-notifications .card__activity-date {
+  color: hsl(219deg, 14%, 63%);
+  display: inline-block;
+  margin-top: 4px;
+}
+.page .section-notifications .card__activity-tag {
+  text-decoration: none;
+  font-weight: 800;
+  color: hsl(219deg, 12%, 42%);
+}
+.page .section-notifications .card__activity-tag--active, .page .section-notifications .card__activity-tag:hover {
+  color: hsl(219deg, 85%, 26%);
+}
+.page .section-notifications .card__activity-message {
+  width: 262px;
+  height: 121px;
+  margin-top: 12px;
+  padding: 18px 31px 30px 15px;
+  border: 1px solid hsl(211deg, 68%, 94%);
+  color: hsl(219deg, 12%, 42%);
+  text-decoration: none;
+  border-radius: 6px;
+  display: block;
+}
+.page .section-notifications .card__activity-message:hover {
+  cursor: pointer;
+  background-color: hsl(211deg, 68%, 94%);
+}
+.page .section-notifications .card__activity-picture {
+  width: 39px;
+  height: 39px;
+  display: inline-block;
+  background-image: url(../assets/images/image-chess.webp);
+  background-size: cover;
+}
+.page .section-notifications .card__activity-picture:hover {
+  cursor: pointer;
+  border: 2px solid hsl(211deg, 68%, 94%);
+  border-radius: 7px;
+}
+.page .section-notifications .card__activity-picture--photo {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.page .section-notifications .card__activity-picture--photo p {
+  width: 194px;
+}
+
+@media (min-width: 1440px) {
+  .page__container {
+    width: 1440px;
+    background-color: hsl(210deg, 60%, 98%);
+    padding: 0;
+  }
+  .page__card-notification {
+    width: 730px;
+    height: 838px;
+    margin: 60px auto;
+    padding: 35px 32px 15px 32px;
+    background-color: hsl(0deg, 0%, 100%);
+    border-radius: 12px;
+  }
+  .page .section-notifications {
+    margin-top: 36px;
+  }
+  .page .section-notifications .card {
+    width: 668px;
+    margin-bottom: 8px;
+  }
+  .page .section-notifications .card__notification--active::after {
+    margin: 8px 0 0 6px;
+  }
+  .page .section-notifications .card__size-1, .page .section-notifications .card__size-2, .page .section-notifications .card__size-3 {
+    height: 78px;
+  }
+  .page .section-notifications .card__size-4 {
+    height: auto;
+  }
+  .page .section-notifications .card__size-3, .page .section-notifications .card__size-4, .page .section-notifications .card__size-5, .page .section-notifications .card__size-6, .page .section-notifications .card__size-7 {
+    margin-bottom: 12px;
+  }
+  .page .section-notifications .card__image {
+    width: 45px;
+    height: 45px;
+  }
+  .page .section-notifications .card__activities {
+    font-size: 1rem;
+  }
+  .page .section-notifications .card__name {
+    font-size: 1rem;
+  }
+  .page .section-notifications .card__activity-date--position {
+    position: relative;
+    top: -22px;
+  }
+  .page .section-notifications .card__activity-message {
+    width: 566px;
+    height: 97px;
+    padding: 22px 30px 30px 30px;
+    font-size: 0.95rem;
+  }
+  .page .section-notifications .card__activity-picture {
+    width: 45px;
+    height: 45px;
+  }
+  .page .section-notifications .card__activity-picture--photo p {
+    width: 345px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
